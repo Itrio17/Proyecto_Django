@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/scss/styles.css">
+    <title>Gaming TV</title>
+</head>
+
+<body>
+    <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="/static/icons/tvGaming.png" width="30" height="30">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="./catalogoJuegos/catalogo.html">
+                    Catálogo
+                </a>
+            </div>
+
+            <div>
+                <input class="input mt-2" type="text" placeholder="Quieres ver algo?" style="width: 800px">
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-info">
+                            <strong>Registrate</strong>
+                        </a>
+                        <a class="button is-primary" id="login">
+                            Iniciar Sesión
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="backImg">
+        <img src="/static/images/neon-background-wallpaper.jpg" alt="" class="back">
+    </div>
+
+    <div class="box" id="box">
+        <div class="boxTitle">
+            <div class="subs">
+                <h3 class="titleSubs">Suscripciones</h3>
+            </div>
+            <div class="menu">
+                <button class="toggler" id="toggler">
+                    <img src="/static/icons/menu.png" alt="menu" width="20px" height="20px">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="item active">
+            <img src="/static/images/ibai.jpg">
+        </div>
+        <div class=" item next">
+            <img src="/static/images/ibai.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/images/Reven.jpg">
+        </div>
+        <div class="item">
+            <img src="/static/images/rubius.jpg">
+        </div>
+        <div class="item prev">
+            <img src="/static/images/ibai.jpg">
+        </div>
+        <div class="button-container">
+            <div class="button">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="button">
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="liveTitle">
+        <h1>Canales en vivo</h1>
+    </div>
+
+    <section class="liveStreams">
+            <div class="card">
+                <div class="card-image">
+                    <a href="http://localhost:3000">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <a><h4>Titulo del Streaming</h4></a>
+                            <a><p>Streamer</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <a href="#">
+                        <figure class="image is-4by3">
+                            <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                        </figure>
+                    </a>
+                    <div class="liveImg">
+                        <img src="/static/icons/live.png" alt="liveImg" >
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h4>Titulo del Streaming</h4>
+                            <p>Streamer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="related">
+        <h1>Recomendaciones</h1>
+    </div>
+
+    <section class="relatedStreams">
+        <div class="card">
+            <div class="card-image">
+                <a href="#">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="#">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="#">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="#">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <a href="#">
+                    <figure class="image is-4by3">
+                        <img src="/static/images/auron.jpg" alt="Placeholder image" >
+                    </figure>
+                </a>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="/static/images/auron.jpg" class="is-rounded" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <h4>Titulo del Streaming</h4>
+                        <p>Streamer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container" id="container">
+        <form class="login" autocomplete="off">
+            <h2>Login</h2>
+            <fieldset>
+                <legend>Username</legend>
+                <input type="text" id="username">
+            </fieldset>
+            <fieldset>
+                <legend>Password</legend>
+                <input type="password" id="password">
+            </fieldset>
+            <input type="submit" value="Login">
+            <span>Don't have an account, <a href="javascript:alert('Thanks for clicking that dummy button')">Sign up</a></span>
+        </form>
+
+        <a href="#" target="_blank" class="yt">Algo Lorem ipsum dol</a>
+
+        <a class="exit" id="exit">
+            <img src="/static/icons/remove.png">
+        </a>
+
+    <p id="cc">Otra cosa<a href='#'> Lorem ipsum dolor sit</a></p>
+    </div>
+
+    <script>
+        const slider = document.querySelector(".items");
+		const slides = document.querySelectorAll(".item");
+		const button = document.querySelectorAll(".button");
+
+		let current = 0;
+		let prev = 4;
+		let next = 1;
+
+		for (let i = 0; i < button.length; i++) {
+			button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
+		}
+
+		const gotoPrev = () => current > 0 ? gotoNum(current - 1) : gotoNum(slides.length - 1);
+
+		const gotoNext = () => current < 4 ? gotoNum(current + 1) : gotoNum(0);
+
+		const gotoNum = number => {
+			current = number;
+			prev = current - 1;
+			next = current + 1;
+
+			for (let i = 0; i < slides.length; i++) {
+				slides[i].classList.remove("active");
+				slides[i].classList.remove("prev");
+				slides[i].classList.remove("next");
+			}
+
+			if (next == 5) {
+				next = 0;
+			}
+
+			if (prev == -1) {
+				prev = 4;
+			}
+
+			slides[current].classList.add("active");
+			slides[prev].classList.add("prev");
+			slides[next].classList.add("next");
+		};
+    </script>
+    <script>
+        const menu = document.getElementById("box");
+        const toggler = document.getElementById("toggler");
+
+        toggler.addEventListener("click", function () {
+            menu.classList.replace("box", "box-2");
+            toggler.classList.replace("toggler", "toggler-2");
+        });
+    </script>
+    <script>
+        let arrayElements = document.getElementsByClassName("card");
+        for(let element of arrayElements) {
+            element.addEventListener("mouseover", function() {
+                element.classList.replace("card", "card-2");
+            });
+            element.addEventListener("click", function() {
+                console.log("hiciste click");
+            });
+        };
+
+        for(let element of arrayElements) {
+            element.addEventListener("mouseout", function() {
+                element.classList.replace("card-2", "card");
+            });
+        };
+    </script>
+    <script>
+        const login = document.getElementById("login");
+        const form = document.getElementById("container")
+
+        login.addEventListener("click", function () {
+            form.classList.replace("container", "container-2");
+        });
+    </script>
+    <script>
+        const exit = document.getElementById("exit");
+        const form2 = document.getElementById("container")
+
+        exit.addEventListener("click", function () {
+            form2.classList.replace("container-2", "container");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar {
+    z-index: 250;
+}
+
+.backImg {
+    .back {
+        z-index: -200;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.box {
+    height: 1800px;
+    width: 200px;
+    background-color: #7877778f;
+    position: absolute;
+    top: 72%;
+    left: 3.5%;
+    transform: translate(-50%, -50%);
+
+    .boxTitle{
+        display: flex;
+        flex-direction: row;
+
+        .subs {
+
+            .titleSubs {
+                margin-right: 30px;
+                color: #ffffff;
+                margin-left: 10px;
+            }
+        }
+
+        .menu {
+
+            .toggler {
+                width: 25px;
+                height: 25px;
+                background-color: #7877778f;
+                border-radius: 20%;
+            }
+        }
+    }
+}
+
+
+.box-2 {
+    height: 1800px;
+    width: 70px;
+    background-color: #7877778f;
+    position: absolute;
+    top: 72%;
+    left: 1%;
+    transform: translate(-50%, -50%);
+
+    .boxTitle {
+
+        .subs {
+            display: none;
+
+            .titleSubs {
+                display: none;
+            }
+        }
+
+        .menu {
+            margin-top: 20px;
+            margin-left: 28px;
+
+            .toggler-2 {
+                width: 25px;
+                height: 25px;
+                background-color: #7877778f;
+                border-radius: 20%;
+            }
+        }
+    }
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px 250px;
+    grid-template-rows: 350px 350px 350px 350px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    z-index: -150;
+    position: absolute;
+    top: 68%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 100px;
+
+    .cardButton{
+
+        .card {
+
+            .card-image{
+
+                .image{
+
+                    img {
+                        height: 346px;
+                        width: 255px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cardButton-2 {
+        box-shadow: 0px 0px 27px 13px lightgrey;
+        border: none;
+        border-radius: 0%;
+
+        .card {
+
+            .card-image{
+
+                .image{
+
+                    img {
+                        height: 350px;
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+
+    .box {
+        top: 88%;
+        left: 4.5%;
+    }
+
+    .box-2 {
+        top: 88%;
+        left: 1%;
+    }
+
+    .catalogo {
+        grid-template-columns: 215px 215px 215px 215px 215px 215px;
+        grid-template-rows: 250px 250px 250px 250px;
+        grid-column-gap: 47px;
+        grid-row-gap: 117px;
+        top: 72%;
+        left: 52%;
+    }
+}
+
