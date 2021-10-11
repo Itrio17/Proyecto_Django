@@ -473,7 +473,12 @@ a.yt:hover {
   }
 
   .items {
-    top: 45%;
+    top: 40%;
+    left: auto;
+  }
+  .items .item {
+    width: 200px;
+    height: 200px;
   }
 
   .liveTitle {

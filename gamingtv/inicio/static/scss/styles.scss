@@ -575,7 +575,12 @@ a.yt {
     }
 
     .items {
-        top: 45%;
+        top: 40%;
+        left: auto;
+        .item {
+            width: 200px;
+            height: 200px;
+        }
     }
 
     .liveTitle {
