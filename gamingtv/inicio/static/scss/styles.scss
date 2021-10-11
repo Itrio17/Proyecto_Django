@@ -629,6 +629,69 @@ a.yt {
     }
 }
 
+@media (min-width: 375px) and (max-width: 424px){
+    .box {
+        display: none;
+    }
+    .box-2 {
+        display: none;
+    }
+
+    .items {
+        top: 21%;
+        
+        .item {
+            width: 140px;
+            height: 140px;
+        }
+        .button-container .button:before {
+            width: 20px;
+            height: 20px;
+        }
+        .button-container {
+            transform: translate(-50%, 40%);
+            width: 335px;
+            height: 210px;
+
+            .button {
+                font-size: 0;
+            }
+        }
+    }
+
+    .liveTitle {
+        top: 45%;
+        left: 22.5%;
+        background-color: rgba(0, 0, 0, 0.472);
+        border-radius: 5px;
+    }
+    .liveStreams {
+        grid-gap: 20px;
+        grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        top: 295%;
+    }
+
+    .related {
+        top: 545%;
+        left: 26.5%;
+        background-color: rgba(0, 0, 0, 0.472);
+        border-radius: 5px;
+    }
+    .relatedStreams {
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        top: 655%;
+
+            .media {
+                flex-wrap: wrap;
+            }
+                .media-content {
+                    color: blanchedalmond;
+                }
+    }
+}
+
 /* @media (max-width: 1920px) {
 
     .box {
