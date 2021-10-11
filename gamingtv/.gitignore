@@ -1,0 +1,4 @@
+# ignora los archivos del directorio __pycache__
+**/__pycache__/
+
+
