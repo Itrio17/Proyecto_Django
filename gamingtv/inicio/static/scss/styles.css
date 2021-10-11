@@ -473,16 +473,27 @@ a.yt:hover {
   }
 
   .items {
-    top: 40%;
-    left: auto;
+    top: 21%;
   }
   .items .item {
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
+  }
+  .items .button-container .button:before {
+    width: 20px;
+    height: 20px;
+  }
+  .items .button-container {
+    transform: translate(-50%, 40%);
+    width: 270px;
+    height: 210px;
+  }
+  .items .button-container .button {
+    font-size: 0;
   }
 
   .liveTitle {
-    top: 115%;
+    top: 45%;
     left: 27.5%;
     background-color: rgba(0, 0, 0, 0.472);
     border-radius: 5px;
@@ -492,11 +503,11 @@ a.yt:hover {
     grid-gap: 20px;
     grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    top: 1265%;
+    top: 295%;
   }
 
   .related {
-    top: 1525%;
+    top: 545%;
     left: 31.5%;
     background-color: rgba(0, 0, 0, 0.472);
     border-radius: 5px;
@@ -505,7 +516,7 @@ a.yt:hover {
   .relatedStreams {
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    top: 1650%;
+    top: 670%;
   }
   .relatedStreams .media {
     flex-wrap: wrap;
