@@ -566,8 +566,52 @@ a.yt {
         }
 }
 
+@media (min-width: 320px) and (max-width: 374px){
+    .box {
+        display: none;
+    }
+    .box-2 {
+        display: none;
+    }
 
-@media (max-width: 1920px) {
+    .items {
+        top: 45%;
+    }
+
+    .liveTitle {
+        top: 115%;
+        left: 27.5%;
+        background-color: rgba(0, 0, 0, 0.472);
+        border-radius: 5px;
+    }
+    .liveStreams {
+        grid-gap: 20px;
+        grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        top: 1265%;
+    }
+
+    .related {
+        top: 1525%;
+        left: 31.5%;
+        background-color: rgba(0, 0, 0, 0.472);
+        border-radius: 5px;
+    }
+    .relatedStreams {
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        top: 1650%;
+
+            .media {
+                flex-wrap: wrap;
+            }
+                .media-content {
+                    color: blanchedalmond;
+                }
+    }
+}
+
+/* @media (max-width: 1920px) {
 
     .box {
         top: 79%;
@@ -628,4 +672,4 @@ a.yt {
         top: 91%;
         left: 20.5%;
     }
-}
+} */

@@ -463,56 +463,113 @@ a.yt:hover {
   font-size: 18px;
 }
 
-@media (max-width: 1920px) {
+@media (min-width: 320px) and (max-width: 374px) {
   .box {
-    top: 79%;
-    left: 4.5%;
+    display: none;
   }
 
   .box-2 {
-    top: 79%;
-    left: 1%;
+    display: none;
   }
 
   .items {
-    top: 21%;
-    left: 51%;
+    top: 45%;
   }
 
   .liveTitle {
-    top: 40%;
-    left: 19%;
+    top: 115%;
+    left: 27.5%;
+    background-color: rgba(0, 0, 0, 0.472);
+    border-radius: 5px;
   }
 
   .liveStreams {
-    grid-template-columns: 250px 250px 250px 250px 250px;
-    grid-template-rows: 200px 200px;
-    top: 62%;
-    left: 53%;
-  }
-  .liveStreams .card .card-content .media .media-content p {
-    color: #ffffff;
-    padding-left: 5px;
-  }
-  .liveStreams .card .card-content .media .media-content h4 {
-    color: #ffffff;
-    padding-left: 5px;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom: 0px;
-  }
-
-  .relatedStreams {
-    grid-template-columns: 250px 250px 250px 250px 250px;
-    grid-template-rows: 200px;
-    top: 102%;
-    left: 53%;
+    grid-gap: 20px;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    top: 1265%;
   }
 
   .related {
-    top: 91%;
-    left: 20.5%;
+    top: 1525%;
+    left: 31.5%;
+    background-color: rgba(0, 0, 0, 0.472);
+    border-radius: 5px;
+  }
+
+  .relatedStreams {
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    top: 1650%;
+  }
+  .relatedStreams .media {
+    flex-wrap: wrap;
+  }
+  .relatedStreams .media-content {
+    color: blanchedalmond;
   }
 }
+/* @media (max-width: 1920px) {
+
+    .box {
+        top: 79%;
+        left: 4.5%;
+    }
+
+    .box-2 {
+        top: 79%;
+        left: 1%;
+    }
+
+    .items {
+        top: 21%;
+        left: 51%;
+    }
+
+    .liveTitle{
+        top: 40%;
+        left: 19%;
+    }
+
+    .liveStreams {
+        grid-template-columns: 250px 250px 250px 250px 250px;
+        grid-template-rows: 200px 200px;
+        top: 62%;
+        left: 53%;
+
+        .card {
+            .card-content {
+                .media {
+                    .media-content {
+                        p {
+                            color: #ffffff;
+                            padding-left: 5px;
+                        }
+
+                        h4 {
+                            color: #ffffff;
+                            padding-left: 5px;
+                            font-size: 20px;
+                            font-weight: bolder;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .relatedStreams {
+        grid-template-columns: 250px 250px 250px 250px 250px;
+        grid-template-rows: 200px;
+        top: 102%;
+        left: 53%;
+    }
+
+    .related {
+        top: 91%;
+        left: 20.5%;
+    }
+} */
 
 /*# sourceMappingURL=styles.css.map */
