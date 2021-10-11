@@ -22,5 +22,5 @@ urlpatterns = [
     #Rutas para las urls
     # path('streamers/', include("streamers.urls")),
     # path('streamingroom/', include("streamingroom.urls")),
-    # path('catalogo/', include("catalogo.urls")),
+    path('catalogo/', include("catalogo.urls")),
 ]
