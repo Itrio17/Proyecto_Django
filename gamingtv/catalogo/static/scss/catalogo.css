@@ -99,7 +99,7 @@ body {
   width: 250px;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1080px) {
   .box {
     top: 88%;
     left: 4.5%;
