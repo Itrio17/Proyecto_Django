@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.sufee-login {
+    text-align: center;
+
+    .container {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 24%;
+
+        .login-content{
+
+            .login-form{
+
+                form{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
