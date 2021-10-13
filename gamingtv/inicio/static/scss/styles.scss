@@ -200,9 +200,10 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 15px;
     position: unset;
+    margin-top: 17em;
     /* top: 60%;
     left: 50%; */
-    transform: translate(0%, 10%);
+    /* transform: translate(0%, 10%); */
 
 
         .card {
@@ -348,6 +349,7 @@ body {
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 15px;
+    margin-top: 4em;
     /* transform: translate(0%, 25%); */
 
         .card {
@@ -598,7 +600,6 @@ a.yt {
         border-radius: 5px;
     }
     .liveStreams {
-        grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
@@ -610,7 +611,7 @@ a.yt {
     }
     .relatedStreams {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        margin-top: 22em;
+        margin-top:5em;
 
         .card {
             display: flex;
@@ -675,19 +676,19 @@ a.yt {
         border-radius: 5px;
     }
     .liveStreams {
-        grid-gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* margin-top: 17em; */
     }
 
     .related {
-        top: 587%;
+        top: 645%;
         left: 26.5%;
         background-color: rgba(0, 0, 0, 0.472);
         border-radius: 5px;
     }
     .relatedStreams {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        top: 655%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* margin-top: 4em; */
 
         .card {
             display: flex;
@@ -698,24 +699,20 @@ a.yt {
                 height: 100%;
 
                 .image {
-                    padding-top: 0;
+                    /* padding-top: 0; */
                 }
             }
         }
 
-            .media {
-                flex-wrap: wrap;
-                align-items: flex-end;
-                flex-direction: column;
-
-                .image img {
-                    width: 100%;
-                    height: 100%;
-                }
+        .media {
+            flex-wrap: wrap;
+            align-items: flex-end;
+            flex-direction: column;
+        }
+            .media-content {
+                color: blanchedalmond;
+                text-align: center;
             }
-                .media-content {
-                    color: blanchedalmond;
-                }
     }
 }
 
