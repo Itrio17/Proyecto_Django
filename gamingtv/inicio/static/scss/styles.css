@@ -70,7 +70,7 @@ body {
 
 .items {
   position: absolute;
-  top: 19%;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
@@ -174,9 +174,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 15px;
   position: unset;
+  margin-top: 17em;
   /* top: 60%;
   left: 50%; */
-  transform: translate(0%, 10%);
+  /* transform: translate(0%, 10%); */
 }
 .liveStreams .card {
   background-color: #78777747;
@@ -282,7 +283,8 @@ body {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 15px;
-  transform: translate(0%, 25%);
+  margin-top: 4em;
+  /* transform: translate(0%, 25%); */
 }
 .relatedStreams .card {
   background-color: #78777747;
@@ -495,7 +497,6 @@ a.yt:hover {
   }
 
   .liveStreams {
-    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
@@ -507,14 +508,28 @@ a.yt:hover {
   }
 
   .relatedStreams {
-    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 5em;
+  }
+  .relatedStreams .card {
+    display: flex;
+    justify-content: space-between;
+  }
+  .relatedStreams .card .card-image {
+    width: 100%;
+    height: 100%;
+  }
+  .relatedStreams .card .card-image .image {
+    padding-top: 74%;
   }
   .relatedStreams .media {
     flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
   }
   .relatedStreams .media-content {
     color: blanchedalmond;
+    text-align: center;
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
@@ -526,9 +541,6 @@ a.yt:hover {
     display: none;
   }
 
-  .items {
-    top: 21%;
-  }
   .items .item {
     width: 140px;
     height: 140px;
@@ -554,27 +566,35 @@ a.yt:hover {
   }
 
   .liveStreams {
-    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .related {
-    top: 587%;
+    top: 645%;
     left: 26.5%;
     background-color: rgba(0, 0, 0, 0.472);
     border-radius: 5px;
   }
 
   .relatedStreams {
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    top: 655%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .relatedStreams .card {
+    display: flex;
+    justify-content: space-between;
+  }
+  .relatedStreams .card .card-image {
+    width: 100%;
+    height: 100%;
   }
   .relatedStreams .media {
     flex-wrap: wrap;
+    align-items: flex-end;
+    flex-direction: column;
   }
   .relatedStreams .media-content {
     color: blanchedalmond;
+    text-align: center;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -586,9 +606,6 @@ a.yt:hover {
     display: none;
   }
 
-  .items {
-    top: 21%;
-  }
   .items .item {
     width: 140px;
     height: 140px;
@@ -614,26 +631,23 @@ a.yt:hover {
   }
 
   .liveStreams {
-    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .related {
-    top: 587%;
+    top: 703%;
     left: 26.5%;
     background-color: rgba(0, 0, 0, 0.472);
     border-radius: 5px;
   }
 
   .relatedStreams {
-    grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    top: 655%;
   }
   .relatedStreams .media {
     flex-wrap: wrap;
   }
-  .relatedStreams .media-content {
+  .relatedStreams .media .media-content {
     color: blanchedalmond;
   }
 }
@@ -697,56 +711,68 @@ a.yt:hover {
     color: blanchedalmond;
   }
 }
-@media (max-width: 1440px) {
-  .box {
-    top: 79%;
-    left: 4.5%;
-  }
+/* @media (max-width: 1440px) {
 
-  .box-2 {
-    top: 79%;
-    left: 1%;
-  }
+    .box {
+        top: 79%;
+        left: 4.5%;
+    }
 
-  .items {
-    top: 21%;
-    left: 51%;
-  }
+    .box-2 {
+        top: 79%;
+        left: 1%;
+    }
 
-  .liveTitle {
-    top: 40%;
-    left: 19%;
-  }
+    .items {
+        top: 21%;
+        left: 51%;
+    }
 
-  .liveStreams {
-    grid-template-columns: 250px 250px 250px 250px 250px;
-    grid-template-rows: 200px 200px;
-    top: 80%;
-    left: 53%;
-  }
-  .liveStreams .card .card-content .media .media-content p {
-    color: #ffffff;
-    padding-left: 5px;
-  }
-  .liveStreams .card .card-content .media .media-content h4 {
-    color: #ffffff;
-    padding-left: 5px;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom: 0px;
-  }
+    .liveTitle{
+        top: 40%;
+        left: 19%;
+    }
 
-  .relatedStreams {
-    grid-template-columns: 250px 250px 250px 250px 250px;
-    grid-template-rows: 200px;
-    top: 102%;
-    left: 53%;
-  }
+    .liveStreams {
+        grid-template-columns: 250px 250px 250px 250px 250px;
+        grid-template-rows: 200px 200px;
+        top: 80%;
+        left: 53%;
 
-  .related {
-    top: 91%;
-    left: 20.5%;
-  }
+        .card {
+            .card-content {
+                .media {
+                    .media-content {
+                        p {
+                            color: #ffffff;
+                            padding-left: 5px;
+                        }
+
+                        h4 {
+                            color: #ffffff;
+                            padding-left: 5px;
+                            font-size: 20px;
+                            font-weight: bolder;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .relatedStreams {
+        grid-template-columns: 250px 250px 250px 250px 250px;
+        grid-template-rows: 200px;
+        top: 102%;
+        left: 53%;
+    }
+
+    .related {
+        top: 91%;
+        left: 20.5%;
+    }
 }
+ */
 
 /*# sourceMappingURL=styles.css.map */
