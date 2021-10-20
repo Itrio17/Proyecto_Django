@@ -41,12 +41,8 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-info">
-                            <strong>Registrate</strong>
-                        </a>
-                        <a class="button is-primary">
-                            Iniciar Sesión
-                        </a>
+                        <p> {{ user.username }} </p>
+                        <a class="button is-primary" id="logout" href="/logout/">Salir</a>
                     </div>
                 </div>
             </div>

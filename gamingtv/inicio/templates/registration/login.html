@@ -9,6 +9,11 @@
 </head>
 <body class="bg-dark">
     <div class="sufee-login d-flex align-content-center flex-wrap position-absolute top-50 start-50 translate-middle">
+        {% if msg %}
+        <aside class="text-center text-white">
+            {{ msg }}
+        </aside>
+        {% endif %}
         <div class="container">
             <div class="login-content">
                 <div class="login-logo">
@@ -23,17 +28,20 @@
                         <div class="form-group">
                             <div class="mb-3">
                                 <label class="text-white">Usuario</label>
-                                <input type="text" class="form-control" placeholder="Nombre de Usuario">
+                                <input type="text" class="form-control" placeholder="Nombre de Usuario" name="username">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="mb-3">
                                 <label class="text-white">Contraseña</label>
-                                <input type="password" class="form-control" placeholder="Contraseña">
+                                <input type="password" class="form-control" placeholder="Contraseña" name="password">
                             </div>
                         </div>
-                        <button type="button" class="btn btn-success ">Iniciar Sesión</button>
+                        <button type="submit" class="btn btn-success ">Iniciar Sesión</button>
                     </form>
+                </div>
+                <div>
+                    <p class="text-white">No tienes cuenta?</p><button href="register.html" type="submit" class="btn btn-success">Registrate</button>
                 </div>
             </div>
 
