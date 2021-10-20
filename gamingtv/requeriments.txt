@@ -1,14 +1,10 @@
 asgiref==3.4.1
 certifi==2021.5.30
 Django==3.2.7
-<<<<<<< HEAD
-Pillow==8.4.0
-=======
 django-appconf==1.0.5
 django-compressor==2.4.1
 django-sass-processor==1.1
 libsass==0.21.0
->>>>>>> d7dcb6aa8b02c8e6f2acced4d90e3a68162259af
 pytz==2021.3
 rcssmin==1.0.6
 rjsmin==1.1.0
