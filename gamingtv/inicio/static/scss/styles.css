@@ -22,7 +22,7 @@ body {
   width: 200px;
   background-color: #7877778f;
   position: absolute;
-  top: 65%;
+  top: 59%;
   left: 3.5%;
   transform: translate(-50%, -50%);
 }
@@ -711,68 +711,56 @@ a.yt:hover {
     color: blanchedalmond;
   }
 }
-/* @media (max-width: 1440px) {
+@media (max-width: 2560px) {
+  .box {
+    top: 59%;
+    left: 6.5%;
+  }
 
-    .box {
-        top: 79%;
-        left: 4.5%;
-    }
+  .box-2 {
+    top: 79%;
+    left: 1%;
+  }
 
-    .box-2 {
-        top: 79%;
-        left: 1%;
-    }
+  .items {
+    top: 21%;
+    left: 51%;
+  }
 
-    .items {
-        top: 21%;
-        left: 51%;
-    }
+  .liveTitle {
+    top: 40%;
+    left: 19%;
+  }
 
-    .liveTitle{
-        top: 40%;
-        left: 19%;
-    }
+  .liveStreams {
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-rows: 200px 200px;
+    top: 80%;
+    left: 53%;
+  }
+  .liveStreams .card .card-content .media .media-content p {
+    color: #ffffff;
+    padding-left: 5px;
+  }
+  .liveStreams .card .card-content .media .media-content h4 {
+    color: #ffffff;
+    padding-left: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+  }
 
-    .liveStreams {
-        grid-template-columns: 250px 250px 250px 250px 250px;
-        grid-template-rows: 200px 200px;
-        top: 80%;
-        left: 53%;
+  .relatedStreams {
+    grid-template-columns: 250px 250px 250px 250px 250px;
+    grid-template-rows: 200px;
+    top: 102%;
+    left: 53%;
+  }
 
-        .card {
-            .card-content {
-                .media {
-                    .media-content {
-                        p {
-                            color: #ffffff;
-                            padding-left: 5px;
-                        }
-
-                        h4 {
-                            color: #ffffff;
-                            padding-left: 5px;
-                            font-size: 20px;
-                            font-weight: bolder;
-                            margin-bottom: 0px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    .relatedStreams {
-        grid-template-columns: 250px 250px 250px 250px 250px;
-        grid-template-rows: 200px;
-        top: 102%;
-        left: 53%;
-    }
-
-    .related {
-        top: 91%;
-        left: 20.5%;
-    }
+  .related {
+    top: 91%;
+    left: 20.5%;
+  }
 }
- */
 
 /*# sourceMappingURL=styles.css.map */

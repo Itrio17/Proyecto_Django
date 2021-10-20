@@ -38,3 +38,12 @@ def login_user(request):
             "msg":msg,
         }
     )
+
+
+def logout_user(request):
+    if request.method == "POST":
+        logout(request)
+
+        return redirect("/login/")
+
+    return render(request, "registration/logout.html", {})

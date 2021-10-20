@@ -13,3 +13,6 @@ class User(models.Model):
     def __str__(self):
         """Representacion de str para User"""
         return self.nombre + " " + self.apellidos
+
+class Registro(models.Model):
+    nombre = models.Case
