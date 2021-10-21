@@ -1,8 +1,8 @@
+from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from .models import User
-
+from .models import Profile
 
 # Create your views here.
 @login_required()
@@ -43,7 +43,44 @@ def login_user(request):
 def logout_user(request):
     if request.method == "POST":
         logout(request)
-
         return redirect("/login/")
 
     return render(request, "registration/logout.html", {})
+
+
+def register_user(request):
+    """Atiende peticiones GET y POST de Registro"""
+    if request.POST:
+        username = request.POST.get("username")
+        fechaNacimiento = request.POST.get("fechaNacimiento", None)
+        if fechaNacimiento == "":
+            fechaNacimiento = None
+        email = request.POST.get("email", None)
+        password1 = request.POST.get("password_1")
+        password2 = request.POST.get("password_2")
+
+        if password1 == password2:
+            #modelo User
+            user = User(
+                username = username,
+                email = email,
+            )
+            user.set_password(password1)
+            user.save()
+            #modelo Perfil
+            perfil = Profile(
+                user = user,
+                fechaNacimiento = fechaNacimiento,
+            )
+            perfil.save()
+
+            return redirect("/")
+        else:
+            msg = "ERROR: Las claves deben ser iguales"
+    else:
+        #atendiento GET
+        msg=""
+
+    return render(request, "registration/register.html", {
+        "msg":msg
+    })

@@ -17,6 +17,7 @@
     "cSpell.enableFiletypes": [
         "!css",
         "!python",
-        "!scss"
+        "!scss",
+        "!html",
     ]
 }

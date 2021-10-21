@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import User
+from .models import Profile
 
-class UserAdmin(admin.ModelAdmin):
+class ProfileAdmin(admin.ModelAdmin):
     # Se sobre escribe lo que hace __str__
-    list_display = ("id", "nombre", "apellidos", "email", "fechaNacimiento", "tipo")
+    list_display = ("id", "user", "fechaNacimiento")
 
-admin.site.register(User, UserAdmin)
+admin.site.register(Profile, ProfileAdmin)

@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="login-form">
-                    <form method="POST">
+                    <form method="POST" class="d-flex flex-column justify-content-center">
                         {% csrf_token %}
                         <div class="form-group">
                             <div class="mb-3">
@@ -40,8 +40,9 @@
                         <button type="submit" class="btn btn-success ">Iniciar Sesión</button>
                     </form>
                 </div>
-                <div>
-                    <p class="text-white">No tienes cuenta?</p><button href="register.html" type="submit" class="btn btn-success">Registrate</button>
+                <div class="d-flex flex-column justify-content-center">
+                    <p class="text-white">No tienes cuenta?</p>
+                    <a href="/register" class="btn btn-success">Registrate</a>
                 </div>
             </div>
 

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "streamers",
     "streamingroom",
     "sass_processor",
+    "channels",
 ]
 
 MIDDLEWARE = [
