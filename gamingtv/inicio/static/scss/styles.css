@@ -70,7 +70,7 @@ body {
 
 .items {
   position: absolute;
-  top: 23%;
+  top: 24%;
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
@@ -160,12 +160,10 @@ body {
 }
 
 .liveTitle {
-  position: absolute;
-  top: 36%;
-  left: 20%;
-  transform: translate(-50%, -50%);
   font-size: x-large;
   color: #ffffff;
+  justify-self: center;
+  align-self: center;
 }
 
 .liveStreams {
@@ -175,9 +173,6 @@ body {
   margin: 15px;
   position: unset;
   margin-top: 17em;
-  /* top: 60%;
-  left: 50%; */
-  /* transform: translate(0%, 10%); */
 }
 .liveStreams .card {
   background-color: #78777747;
@@ -270,21 +265,17 @@ body {
 }
 
 .related {
-  position: absolute;
-  top: 88%;
-  left: 20.5%;
-  transform: translate(-50%, -50%);
   font-size: x-large;
   color: #ffffff;
+  justify-self: center;
+  align-self: center;
 }
 
 .relatedStreams {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   margin: 15px;
-  margin-top: 4em;
-  /* transform: translate(0%, 25%); */
 }
 .relatedStreams .card {
   background-color: #78777747;
@@ -306,6 +297,9 @@ body {
 }
 .relatedStreams .card .card-content .media .media-content p {
   color: #ffffff;
+}
+.relatedStreams .card .card-content .media .media-content h4 {
+  color: blanchedalmond;
 }
 .relatedStreams .card-2 {
   box-shadow: 0px 0px 27px 13px lightgrey;
@@ -470,7 +464,7 @@ a.yt:hover {
   }
 
   .items {
-    top: 21%;
+    top: 22%;
   }
   .items .item {
     width: 120px;
@@ -489,28 +483,6 @@ a.yt:hover {
     font-size: 0;
   }
 
-  .liveTitle {
-    top: 45%;
-    left: 27.5%;
-    background-color: rgba(0, 0, 0, 0.472);
-    border-radius: 5px;
-  }
-
-  .liveStreams {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .related {
-    top: 587%;
-    left: 30.5%;
-    background-color: rgba(0, 0, 0, 0.472);
-    border-radius: 5px;
-  }
-
-  .relatedStreams {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-top: 5em;
-  }
   .relatedStreams .card {
     display: flex;
     justify-content: space-between;
@@ -528,7 +500,6 @@ a.yt:hover {
     flex-direction: column;
   }
   .relatedStreams .media-content {
-    color: blanchedalmond;
     text-align: center;
   }
 }
@@ -558,43 +529,8 @@ a.yt:hover {
     font-size: 0;
   }
 
-  .liveTitle {
-    top: 45%;
-    left: 22.5%;
-    background-color: rgba(0, 0, 0, 0.472);
-    border-radius: 5px;
-  }
-
-  .liveStreams {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .related {
-    top: 645%;
-    left: 26.5%;
-    background-color: rgba(0, 0, 0, 0.472);
-    border-radius: 5px;
-  }
-
-  .relatedStreams {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  .relatedStreams .card {
-    display: flex;
-    justify-content: space-between;
-  }
-  .relatedStreams .card .card-image {
-    width: 100%;
-    height: 100%;
-  }
-  .relatedStreams .media {
-    flex-wrap: wrap;
-    align-items: flex-end;
-    flex-direction: column;
-  }
-  .relatedStreams .media-content {
-    color: blanchedalmond;
-    text-align: center;
+  .relatedStreams .media .media-left {
+    margin-right: 0;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -607,7 +543,7 @@ a.yt:hover {
   }
 
   .items .item {
-    width: 140px;
+    width: 170px;
     height: 140px;
   }
   .items .button-container .button:before {
@@ -616,39 +552,15 @@ a.yt:hover {
   }
   .items .button-container {
     transform: translate(-50%, 40%);
-    width: 335px;
+    width: 385px;
     height: 210px;
   }
   .items .button-container .button {
     font-size: 0;
   }
 
-  .liveTitle {
-    top: 45%;
-    left: 22.5%;
-    background-color: rgba(0, 0, 0, 0.472);
-    border-radius: 5px;
-  }
-
-  .liveStreams {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .related {
-    top: 703%;
-    left: 26.5%;
-    background-color: rgba(0, 0, 0, 0.472);
-    border-radius: 5px;
-  }
-
-  .relatedStreams {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
   .relatedStreams .media {
     flex-wrap: wrap;
-  }
-  .relatedStreams .media .media-content {
-    color: blanchedalmond;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -660,11 +572,8 @@ a.yt:hover {
     display: none;
   }
 
-  .items {
-    top: 21%;
-  }
   .items .item {
-    width: 140px;
+    width: 300px;
     height: 140px;
   }
   .items .button-container .button:before {
@@ -673,93 +582,33 @@ a.yt:hover {
   }
   .items .button-container {
     transform: translate(-50%, 40%);
-    width: 335px;
+    width: 700px;
     height: 210px;
   }
   .items .button-container .button {
     font-size: 0;
   }
-
-  .liveTitle {
-    top: 45%;
-    left: 22.5%;
-    background-color: rgba(0, 0, 0, 0.472);
-    border-radius: 5px;
-  }
-
-  .liveStreams {
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .related {
-    top: 587%;
-    left: 26.5%;
-    background-color: rgba(0, 0, 0, 0.472);
-    border-radius: 5px;
-  }
-
-  .relatedStreams {
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    top: 655%;
-  }
-  .relatedStreams .media {
-    flex-wrap: wrap;
-  }
-  .relatedStreams .media-content {
-    color: blanchedalmond;
-  }
 }
-@media (max-width: 2560px) {
+@media (min-width: 1024px) and (max-width: 2560px) {
   .box {
-    top: 59%;
+    height: 100%;
+    width: 15%;
     left: 6.5%;
   }
 
   .box-2 {
-    top: 79%;
-    left: 1%;
+    height: 100%;
+    width: 15%;
+    left: 6.5%;
   }
 
   .items {
-    top: 21%;
-    left: 51%;
-  }
-
-  .liveTitle {
-    top: 40%;
-    left: 19%;
+    top: 30%;
+    left: 50%;
   }
 
   .liveStreams {
-    grid-template-columns: 250px 250px 250px 250px 250px;
-    grid-template-rows: 200px 200px;
-    top: 80%;
-    left: 53%;
-  }
-  .liveStreams .card .card-content .media .media-content p {
-    color: #ffffff;
-    padding-left: 5px;
-  }
-  .liveStreams .card .card-content .media .media-content h4 {
-    color: #ffffff;
-    padding-left: 5px;
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom: 0px;
-  }
-
-  .relatedStreams {
-    grid-template-columns: 250px 250px 250px 250px 250px;
-    grid-template-rows: 200px;
-    top: 102%;
-    left: 53%;
-  }
-
-  .related {
-    top: 91%;
-    left: 20.5%;
+    margin-top: 30%;
   }
 }
 

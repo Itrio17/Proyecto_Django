@@ -74,7 +74,7 @@ body {
 
 .catalogo {
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px 250px 250px;
+  /* grid-template-columns: 250px 250px 250px 250px 250px 250px;
   grid-template-rows: 350px 350px 350px 350px;
   grid-column-gap: 50px;
   grid-row-gap: 50px;
@@ -83,7 +83,7 @@ body {
   top: 68%;
   left: 52%;
   transform: translate(-50%, -50%);
-  margin-bottom: 100px;
+  margin-bottom: 100px; */
 }
 .catalogo .cardButton .card .card-image .image img {
   height: 346px;
@@ -99,7 +99,7 @@ body {
   width: 250px;
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 320px) {
   .box {
     top: 88%;
     left: 4.5%;
@@ -111,12 +111,8 @@ body {
   }
 
   .catalogo {
-    grid-template-columns: 215px 215px 215px 215px 215px 215px;
-    grid-template-rows: 250px 250px 250px 250px;
-    grid-column-gap: 47px;
-    grid-row-gap: 117px;
-    top: 72%;
-    left: 52%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
   }
 }
 
