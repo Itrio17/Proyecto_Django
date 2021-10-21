@@ -126,6 +126,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+ASGI_APPLICATION = "gamingtv.asgi.application"
 
 STATIC_ROOT = BASE_DIR / 'static'
 SASS_PROCESSOR_ROOT = STATIC_ROOT
