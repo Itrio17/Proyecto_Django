@@ -59,7 +59,11 @@
         <i class="fas fa-bars" id="btn"></i>
         <i class="fas fa-angle-double-right" id="cancel"></i>
     </label>
+<<<<<<< HEAD
     <div class="sidebar">
+=======
+    <div class="sidebar" id="show">      
+>>>>>>> d94dea0894aa06ce7ab1c91080d4c18ac284fba5
         <header>Nevbar</header><br>
         <ul>
             <li><a href="#"><i class="fas fa-house-user"></i>Suscripciones</a></li>
@@ -283,12 +287,15 @@
     </section>
 
     <script>
-        const menu = document.getElementById("box");
-        const toggler = document.getElementById("toggler");
+        const btn = document.getElementById("cancel");
+        const makeWay = document.getElementById("move")
 
-        toggler.addEventListener("click", function () {
-            menu.classList.replace("box", "box-2");
-            toggler.classList.replace("toggler", "toggler-2");
+        btn.addEventListener("click", function () {
+            makeWay.style.margin = "70px 0 70px 220px"
+
+        btn.addEventListener("click", function () {
+            makeWay.style.margin = "70px"
+        })
         });
     </script>
 
