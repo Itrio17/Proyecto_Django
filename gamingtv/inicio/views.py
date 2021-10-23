@@ -11,6 +11,18 @@ def index(request):
     return render(request, "inicioTv/index.html")
 
 
+def catalogo(request):
+    return render(request, "catalogo/catalogo.html")
+
+
+def streamers(request):
+    return render(request, "streamers/streamers.html")
+
+
+def streamingroom(request):
+    return render(request, "streamingroom/streamingroom.html")
+
+
 def login_user(request):
     """ Atiende las peticiones de GET y POST /login/ """
 

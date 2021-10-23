@@ -39,9 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     "inicio",
-    "catalogo",
-    "streamers",
-    "streamingroom",
     "sass_processor",
     "channels",
 ]
